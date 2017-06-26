@@ -3,7 +3,7 @@ import React from 'react'
 const Users = ({ users }) => (
   <div style={{ display: 'flex', flexWrap: 'wrap'}}>
     {users.map(user => (
-      <a key={user.id} href={`https://github.com/${user.id}`} target="_blank">
+      <a key={user.id} href={`https://github.com/${user.login}`} target="_blank">
         <div
         style={{ 
             display: 'flex',
