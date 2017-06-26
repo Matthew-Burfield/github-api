@@ -1,0 +1,167 @@
+/**
+ * Color Palet:
+ *  #e23636	(226,54,54)
+ *  #000000	(0,0,0)
+ *  #504a4a	(80,74,74)
+ *  #518cca	(81,140,202)
+ *  #f78f3f	(247,143,63)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  display: block;
+  margin: 0px;
+  background: linear-gradient(Indigo, MidnightBlue);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  margin: 20px;
+}
+
+a > div {
+  background: linear-gradient(white, gray)
+}
+
+a:hover > div {
+  background: linear-gradient(gray, white);
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #333;
+  align-items: center;
+}
+
+.app > h1 {
+  color: white;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.landing {
+  background-color: #504a4a;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.landing > h1 {
+  color: #e23636;
+  font-family: 'PT Sans', sans-serif;;
+  font-weight: normal;
+}
+
+.landing input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.above-screen {
+  margin-top: -50%;
+}
+
+.main-container {
+  margin-top: 8%;
+  width: 800px;
+  text-align: center;
+  -webkit-transition: margin .7s ease-in-out;
+  transition: margin .7s ease-in-out;
+}
+
+.main-container img {
+  margin: 20px auto;
+}
+
+.main-container h3 {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 900;
+  transition: opactiy 0.6s ease-in;
+}
+
+.main-container .search-container {
+  position: relative;
+  width: 100%;
+  -webkit-transition: width .6s ease-in-out;
+  transition: width .6s ease-in-out;
+}
+
+.search-bar {
+  width: 100%
+}
+
+input.search-bar {
+  background: #fff;
+  font-size: 1.5em;
+  padding: 8px;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 10px 10px;
+  background: #181818;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #8CD2EC;
+}
+
+.search-icon {
+  display: inline-block;
+  background: transparent;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  height: 30px;
+  width: 30px;
+  position: relative
+}
+
+.search-icon:after {
+  content: "";
+  position: absolute;
+  top: 21.604999999999997px;
+  left: 14.302499999999998px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 5px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 10px
+}
+
+.fly-up {
+  margin-top: -80px;
+}
+
+.fly-up img {
+  margin-top: -500px; 
+  opacity: 0;
+}
+
+.fly-up .search-container {
+  width: 65%;
+}
+
+/** FLEX BOX **/
+*,:after,:before {
+    box-sizing: border-box
+}
+
+
+
