@@ -26,16 +26,16 @@ class SearchBar extends React.Component {
   }
 
   handleSearchTermSubmit = (e) => {
-    const searchString = this.state.inputVal.toLowerCase();
-    if (searchString.length >= 3) {
+    // const searchString = this.state.inputVal.toLowerCase();
+    // if (searchString.length >= 3) {
       this.props.handleButtonClick();
-      axios
-      .get(`${URL}${searchString}`)
-      .then(res => {
-        this.props.searchData(res.data.items);
-      });
-      // this.props.searchData(preload.items);
-    }
+    //   axios
+    //   .get(`${URL}${searchString}`)
+    //   .then(res => {
+    //     this.props.searchData(res.data.items);
+    //   });
+      this.props.searchData(preload.items);
+    // }
   }
 
   render() {

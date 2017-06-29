@@ -23,7 +23,7 @@ a {
 }
 
 a > div {
-  background: linear-gradient(white, gray)
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(128, 128, 128, 0.5));
 }
 
 a:hover > div {
