@@ -2,7 +2,7 @@
   "name": "GithubApi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matthew-burfield.github.io/skedulo-github-api",
+  "homepage": "https://matthew-burfield.github.io/github-api",
   "devDependencies": {
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.7"
