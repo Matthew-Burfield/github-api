@@ -5,7 +5,6 @@ const transition = transitions.scaleDown
 
 const User = ({ user }) => (
   <a
-    key={user.id}
     href={`https://github.com/${user.login}`}
     target="_blank"
   >
@@ -27,7 +26,7 @@ const User = ({ user }) => (
 
 const renderUsers = (users) => (
   users.map(user => (
-    <User user={user} />
+    <User user={user} key={user.id} />
   ))
 )
 

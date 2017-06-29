@@ -9,10 +9,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: block;
   margin: 0px;
   background: linear-gradient(Indigo, MidnightBlue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -73,11 +80,11 @@ a:hover > div {
 }
 
 .main-container {
+  height: 140px;
   margin-top: 8%;
   width: 800px;
   text-align: center;
-  -webkit-transition: margin .7s ease-in-out;
-  transition: margin .7s ease-in-out;
+  transition: margin-top .7s ease-in-out;
 }
 
 .main-container img {
@@ -94,7 +101,6 @@ a:hover > div {
 .main-container .search-container {
   position: relative;
   width: 100%;
-  -webkit-transition: width .6s ease-in-out;
   transition: width .6s ease-in-out;
 }
 
@@ -147,11 +153,6 @@ input.search-bar {
 
 .fly-up {
   margin-top: -80px;
-}
-
-.fly-up img {
-  margin-top: -500px; 
-  opacity: 0;
 }
 
 .fly-up .search-container {

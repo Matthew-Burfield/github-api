@@ -1,0 +1,26 @@
+svg .sherlock_costume {
+  opacity: 0;
+}
+
+svg .sherlock_costume.loading {
+  animation: sherlock 3s infinite;
+}
+
+svg .sherlock_costume.search-complete {
+  opacity: 1;
+}
+
+@keyframes sherlock {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

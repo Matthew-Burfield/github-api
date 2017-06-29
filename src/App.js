@@ -20,17 +20,17 @@ class App extends React.Component {
     });
   }
 
-  handleButtonClick = () => {
+  handleSearchBarAnimation = () => {
     if (this.state.flyup === '') {
       this.setState({ flyup: 'fly-up' })
     }
   }
 
-  onEntered = (e) => {
-    if (e.target.classList.value === 'search-container') {
-      this.setState({ displaySearchImage: false })
-    }
-  }
+  // onEntered = (e) => {
+  //   if (e.target.classList.value === 'search-container') {
+  //     this.setState({ displaySearchImage: false })
+  //   }
+  // }
 
   render() {
     return (
@@ -46,8 +46,9 @@ class App extends React.Component {
           <div>
             <SearchBar
               searchData={this.searchData}
-              handleButtonClick={this.handleButtonClick}
-              displayImage={this.state.displaySearchImage}
+              displayImage={true/*this.state.displaySearchImage*/} 
+              handleSearchBarAnimation={this.handleSearchBarAnimation}
+
             />
           </div>
         </Transition>
